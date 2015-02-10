@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Object Dance Party</title>
+    <title>Subclass Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
-    <script src="src/bouncyDancer.js"></script>
+    <script src="src/marioDancer.js"></script>
     <script src="src/batmanDancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
-    <script src="src/dogDancer.js"></script>
+    <script src="src/discoDancer.js"></script>
   </head>
   <body>
-
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <audio src="lib/batman.mp3" controls autoplay loop></audio>
-      <a href="#" class="addDancerButton" id="BlinkyDancer">add a strobe light</a>
-      <a href="#" class="addDancerButton" id="BouncyDancer">add Mario</a>
+      <audio controls autoplay loop>
+        <source auto-play="true" src="lib/song.m4a" type="audio/mpeg">
+      </audio>
+      <a href="#" class="addDancerButton" id="lineUp">Line Up!</a>
+      <a href="#" class="addDancerButton" id="party">Partay!</a>
+      <a href="#" class="addDancerButton" id="DiscoDancer">add Disco Ball</a>
+      <a href="#" class="addDancerButton" id="MarioDancer">add Mario</a>
       <a href="#" class="addDancerButton" id="BatmanDancer">add Batman</a>
-      <a href="#" class="addDancerButton" id="DogDancer">add a dancing dog</a>
     </div>
+    <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
     <script src="src/init.js"></script>
   </body>
 </html>
