@@ -9,5 +9,12 @@ BouncyDancer.prototype.constructor = BouncyDancer;
 
 BouncyDancer.prototype.step = function(){
   this.$node.addClass("mario");
-  this.$node.animate({"top": "-=100" }).delay(100).animate({"top": "+=100"});
+  // this.$node.toggleClass("mariojump");
+  this.$node.animate({"top": "-=100" }, 10);
+  this.$node.addClass("mariojump").delay(100).queue(function(next){
+    $(this).removeClass("mariojump");
+    $(this).animate({"top": "+=100"}, 10);
+    next();
+});
+  // .delay(2000).animate({"top": "-=100" }).delay(100).animate({"top": "+=100"}).removeClass("mariojump");
 };

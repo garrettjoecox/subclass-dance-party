@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background: url("lib/bg.jpeg");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,8 +21,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:30px solid red;
-  border-radius:10px;
+  border:63px solid;
+  border-radius:15px;
   position:absolute;
 }
 .batman{
@@ -42,4 +42,10 @@ body, a:link, a:visited, a:active{
 }
 .mariojump{
   background: url("lib/mariojump.png") no-repeat top left;
+}
+.dog{
+  width: 250px;
+  height: 250px;
+  border: 0px !important;
+  background: url("lib/dog.gif") no-repeat top left;
 }
