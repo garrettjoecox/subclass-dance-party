@@ -6,6 +6,7 @@ Dancer.prototype.constructor = Dancer;
 
 Dancer.prototype.clock = function(timeBetweenSteps){
   var _this = this;
+  this.step();
   setInterval(function(){
     _this.step()
   }, timeBetweenSteps);

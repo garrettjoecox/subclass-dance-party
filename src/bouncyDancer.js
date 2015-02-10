@@ -8,6 +8,6 @@ BouncyDancer.prototype = Object.create(Dancer.prototype);
 BouncyDancer.prototype.constructor = BouncyDancer;
 
 BouncyDancer.prototype.step = function(){
-  this.$node.addClass("bouncer")
+  this.$node.addClass("mario");
   this.$node.animate({"top": "-=100" }).delay(100).animate({"top": "+=100"});
 };

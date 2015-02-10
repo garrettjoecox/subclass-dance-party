@@ -25,6 +25,21 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-.bouncer{
-  border-color: blue;
+.batman{
+  width: 250px;
+  height: 250px;
+  border: 0px !important;
+  background: url("lib/batman.png") no-repeat top left;
+}
+.batman-left{
+  background: url("lib/batmanleft.png") no-repeat top left ;
+}
+.mario{
+  width: 250px;
+  height: 250px;
+  border: 0px !important;
+  background: url("lib/mario.png") no-repeat top left;
+}
+.mariojump{
+  background: url("lib/mariojump.png") no-repeat top left;
 }

@@ -16,5 +16,13 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
   });
+    $("#BatmanDancer").on("click", function(event){
+    var dancer = new BatmanDancer(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(dancer.$node);
+  });
 });
 
